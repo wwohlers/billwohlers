@@ -1,16 +1,24 @@
 <template>
   <div id="app">
     <div class="main">
-      <div id="nav">
+      <div class="nav">
         <div class="nav-wrapper">
           <div class="left">
             <router-link to="/">Bill Wohlers</router-link>
           </div>
           <div class="right">
             <div class="vertical-center">
+              <router-link to="/about">About</router-link>
               <router-link to="/projects">Projects</router-link>
               <router-link to="/inquiries">Inquiries</router-link>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-mobile">
+        <div class="nav-wrapper">
+          <div class="left">
+            <router-link to="/">Bill Wohlers</router-link>
           </div>
         </div>
       </div>
@@ -68,7 +76,11 @@ body {
   position: relative;
   padding-bottom: 10em; /* height of your footer */
   
-  #nav {
+  .nav-mobile {
+    display: none;
+  }
+  
+  .nav, .nav-mobile {
     background: white;
     position: fixed;
     box-shadow: 0 1px 10px #CCCCCC;
@@ -213,6 +225,27 @@ a {
 
 .dim {
   filter: brightness(75%);
+}
+
+@media only screen and (max-width: 1000px) {
+  .nav {
+    display: none;
+  }
+
+  .main > .nav-mobile {
+    display: block;
+
+    .nav-wrapper > .left {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .footer {
+    a {
+      font-size: 15px;
+    }
+  }
 }
 
 

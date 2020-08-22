@@ -15,7 +15,7 @@
     </div>
     <div class="main">
       <p>
-        I join Trova in an internship that began in April 2020 and ended when school resumed in the fall. At the time, and still, Trova was a small social networking startup, founded by a guy
+        I joined Trova in an internship that began in April 2020 and ended when school resumed in the fall. At the time, and still, Trova was a small social networking startup, founded by a guy
         with a vision, and based in Boston. Their tech stack was ordinary: Angular on the front-end, Express.js and 
         Postgres in the back. Angular was unfamiliar to me, and &mdash; coming from Vue &mdash; presented an unexpectedly steep learning curve.
         The back-end was familiar, as I had worked with both Express and Postgres before.

@@ -146,4 +146,37 @@ export default {
     }
   }
 }
+
+@media only screen and (max-width: 1000px) {
+  .project-list {
+    .project-list-item {
+      margin: 2em auto;
+      width: 80%;
+    }
+  }
+
+  .project {
+    .sub-title-wrapper {
+      margin-top: 1em;
+
+      .sub-title {
+        width: 80%;
+        .img {
+          display: none;
+        }
+      }
+
+      .text {
+
+      }
+    }
+
+    .main {
+      p {
+        width: 80%;
+        font-size: 16px;
+      }
+    }
+  }
+}
 </style>

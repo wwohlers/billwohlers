@@ -6,24 +6,9 @@
         Use this form for any inquiries about me and my work and for business opportunities or offers. 
         <br/><br/>
         If you've got a cause that I'm passionate about, I may be able to make you a custom website at little or no cost. If you would like me to consider such a project, use this form to let me know.
+        <br/><br/>
+        Please reach me at <u>wohlers.w@northeastern.edu</u>.
       </p>
-    </div>
-    <div class="form">
-      <form v-on:submit.prevent>
-        <label class="control">
-          <span class="label">Name</span>
-          <input type="text" placeholder="Name" v-model="name"/>
-        </label>
-        <label class="control">
-          <span class="label">Email</span>
-          <input type="text" placeholder="Email" v-model="email"/>
-        </label>
-        <label class="control">
-          <span class="label">Message</span>
-          <textarea rows="6" v-model="message"></textarea>
-        </label>
-        <button @click="submit()">Send</button>
-      </form>
     </div>
   </div>
 </template>
@@ -83,6 +68,24 @@ export default {
     margin-bottom: 0.5em;
     color: #777;
     cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .banner {
+    p {
+      min-width: 0;
+      width: 80%;
+    }
+  }
+
+  .form {
+    min-width: 0;
+    width: 80%;
+  }
+
+  input, textarea {
+    width: 100%;
   }
 }
 </style>

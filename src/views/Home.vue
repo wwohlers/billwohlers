@@ -3,10 +3,10 @@
     <div class="bio-wrapper">
       <div class="bio">
         <div class="left">
-          <img src="https://www.okea.org/wp-content/uploads/2019/10/placeholder.png">
+          <img src="../assets/me.jpg">
         </div>
         <div class="right">
-          <h1 :class="{ cursor: showCursor }">{{ text }}<img v-if="showReplay" @click="replay" class="replay" src="../assets/logo.png" /></h1>
+          <h1 :class="{ cursor: showCursor }">{{ text }}<img v-if="showReplay" @click="replay" class="replay" src="../assets/replay.svg" /></h1>
           <p class="intro">
             I'm a full stack web developer and undergraduate computer science student at Northeastern University.
             Keep scrolling to learn more about me and the work that I've done.
@@ -19,24 +19,40 @@
       <div class="item">
         <div class="item-container">
           <div class="small">
-            <img src="https://www.okea.org/wp-content/uploads/2019/10/placeholder.png">
+            <img src="../assets/huskyhusky_logo.png">
           </div>
           <div class="big">
             <p class="header-sub">The Husky Husky</p>
-            <p class="tagline">A solo project built for a school organization</p>
+            <p class="tagline">A personal project built for a school organization</p>
             <p class="body">
-              When I first stumbled upon the Husky Husky's old website, I knew right away that I could improve their web presence.
-              In spring 2020, I built <a href="http://thehuskyhusky.com">their new site</a>, which takes care of content management in a way 
-              that makes sense for them while showcasing a simple, functional design free of distracting branding.
+              When I first stumbled upon the Husky Husky's old website, I immediately saw an opportunity to improve their web presence.
+              In spring 2020, I built <a href="https://thehuskyhusky.com">their new site</a>, which takes care of content management in a way 
+              that makes sense for them while showcasing a simple but expressive design.
             </p>
-            <p class="subline">Built with Vue.js, Express.js, and MongoDB</p>
+            <p class="subline">Built with Vue.js, Express.js, and MongoDB on AWS</p>
         </div>
         </div>
       </div>
       <div class="item">
         <div class="item-container">
           <div class="small">
-            <img src="https://www.okea.org/wp-content/uploads/2019/10/placeholder.png">
+            <img src="../assets/f.e_logo.svg">
+          </div>
+          <div class="big">
+            <p class="header-sub">floor.exchange</p>
+            <p class="tagline">Personal project and startup</p>
+            <p class="body">
+              During quarantine, in search of an idea for a new personal project, I envisioned a social network based around stocks and the stock market. Enter floor.exchange, my 
+              solo startup project that allows users to trade stocks with virtual currency and discuss companies and stock market news in a Reddit-like forum. Coming soon &mdash; along with a native app.
+            </p>
+            <p class="subline">Built with Vue, Express.js, and Postgres on AWS</p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item-container">
+          <div class="small">
+            <img src="../assets/trova_logo.png">
           </div>
           <div class="big">
             <p class="header-sub">Trova</p>
@@ -46,14 +62,14 @@
               strong sense of community and belonging. Because the team had only a few engineers, I made large contributions to a complete redesign
               of the front end, and significantly expanded back-end functionality.
             </p>
-            <p class="subline">Built with Angular, Express.js, and Postgres</p>
+            <p class="subline">Built with Angular, Express.js, and Postgres on Heroku</p>
           </div>
         </div>
       </div>
       <div class="item">
         <div class="item-container">
           <div class="small">
-            <img src="https://www.okea.org/wp-content/uploads/2019/10/placeholder.png">
+            <img src="../assets/c4c_logo.png">
           </div>
           <div class="big">
             <p class="header-sub">Code 4 Community</p>
@@ -72,7 +88,6 @@
       <p class="header">My Skills</p>
       <div class="item">
         <div class="item-container">
-          <p class="header-sub">How I can help you</p>
           <div class="skill">
             <p class="name">Vue, React, Angular</p>
             <p class="desc">
@@ -111,7 +126,7 @@
           <div class="skill">
             <p class="name">...and plenty more</p>
             <p class="desc">
-              This is an overview of my biggest strengths as a developer, but there's many more reasons I could give. If you have further questions, <router-link to="/inquiries">drop me a line.</router-link>
+              These are only my biggest strengths as a developer. If you have further questions, <router-link to="/inquiries">drop me a line.</router-link>
             </p>
           </div>
         </div>
@@ -120,10 +135,7 @@
     <div class="more">
       <p class="header">Interested?</p>
       <p class="text">
-        If you want the last minute of your life back, you're out of luck. 
-        But if you have a business inquiry or any further questions, then <router-link to="/inquiries">I've made just the form for you.</router-link>
-        <br/><br/>
-        And finally, click <router-link to="/projects">here</router-link> to learn a little more about me and what I've done.
+        If you have a business inquiry or any further questions, <router-link to="/inquiries">this</router-link> is the page for you. To learn a little more about me and what I've done, click <router-link to="/projects">here</router-link>. And if you want the last minute of your life back, you're out of luck.
       </p>
     </div>
   </div>
@@ -269,14 +281,14 @@ h1 {
     display: flex;
 
     .left {
-      width: 40%;
+      width: 30%;
       position: relative;
 
       img {
         max-height: 100%;
         max-width: 100%;
+        border-radius: 50%;
         width: auto;
-        height: auto;
         position: absolute;
         top: 0;
         bottom: 0;
@@ -308,7 +320,7 @@ h1 {
         background: #F8F8F8;
 
         .item-container {
-          flex-direction: row !important;
+          flex-direction: row;
         }
       }
 
@@ -371,7 +383,7 @@ h1 {
         background: #F2F2F2;
 
         .item-container {
-          flex-direction: row !important;
+          flex-direction: row;
         }
       }
 
@@ -401,8 +413,8 @@ h1 {
   }
 
   .replay {
-    width: 0.5em;
-    height: 0.5em;
+    width: 0.4em;
+    height: 0.4em;
     position: absolute;
     right: -0.5em;
     top: 0;
@@ -423,6 +435,62 @@ h1 {
       width: 50%;
       margin: auto;
       line-height: 1.5em;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .home {
+    .bio {
+      max-width: 95%;
+      max-height: 60%;
+
+      .left {
+        display: none;
+      }
+
+      .right {
+        padding: 0 1em;
+      }
+    }
+
+    .portfolio {
+      .item {
+        padding: 2em 0;
+
+        .item-container {
+          width: 95%;
+          flex-direction: column !important;
+
+          .small {
+            width: 90%;
+            margin: auto;
+
+            img {
+              width: 30%;
+              position: static;
+            }
+          }
+
+          .big {
+            padding: 0 1em;
+          }
+        }
+      }
+    }
+
+    .skills > .item {
+      padding: 2em 0;
+
+      .item-container {
+        width: 85%;
+      }
+    }
+
+    .more {
+      .text {
+        width: 80%;
+      }
     }
   }
 }
