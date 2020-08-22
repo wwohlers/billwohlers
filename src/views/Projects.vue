@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-if="name">Test
+    <div v-if="name">
       <C4C v-if="name === 'c4c'"></C4C>
       <HuskyHusky v-if="name === 'huskyhusky'"></HuskyHusky>
       <Trova v-if="name === 'trova'"></Trova>
@@ -11,17 +11,17 @@
         <div class="project-list">
           <div class="project-list-item" @click="go('trova')">
             <img src="../assets/trova_logo.png">
-            <p class="desc">Intern &mdash; startup company</p>
-            <p class="time">Apr 2020 &mdash; </p>
+            <p class="desc">Intern &middot; Startup</p>
+            <p class="time">Apr 2020 &mdash; Aug 2020</p>
           </div>
           <div class="project-list-item" @click="go('c4c')">
             <img src="../assets/c4c_logo.png">
-            <p class="desc">Developer &mdash; student-run organization</p>
+            <p class="desc">Developer &middot; Student-run org</p>
             <p class="time">Sept 2019 &mdash; </p>
           </div>
           <div class="project-list-item" @click="go('huskyhusky')">
             <img src="../assets/huskyhusky_logo.png">
-            <p class="desc">Solo project</p>
+            <p class="desc">Personal Project &middot; Student-run org</p>
             <p class="time">Jan 2019 &mdash; Apr 2019</p>
           </div>
         </div>
@@ -37,6 +37,7 @@ import Trova from '../components/projects/trova';
 
 export default {
   name: 'Projects',
+  title: "Projects | Bill Wohlers",
   props: {
     name: String,
   },
@@ -121,10 +122,10 @@ export default {
     border-radius: 4px;
     box-shadow: 0 0 12px 4px #DDD;
     padding: 2em 0;
+    transition: 1s;
     cursor: pointer;
     
     &:hover {
-      transition: 1s;
       transform: scale(1.05);
     }
 

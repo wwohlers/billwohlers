@@ -6,7 +6,7 @@
           <img src="https://www.okea.org/wp-content/uploads/2019/10/placeholder.png">
         </div>
         <div class="right">
-          <h1 :class="{ cursor: showCursor }">{{ text }}</h1>
+          <h1 :class="{ cursor: showCursor }">{{ text }}<img v-if="showReplay" @click="replay" class="replay" src="../assets/logo.png" /></h1>
           <p class="intro">
             I'm a full stack web developer and undergraduate computer science student at Northeastern University.
             Keep scrolling to learn more about me and the work that I've done.
@@ -63,7 +63,7 @@
               builds websites for free for nonprofit organizations in the Boston area. So far, I've helped complete their <a href="https://c4cneu.com">internal
               website</a>, and have helped with front-end work for Lucy's Love Bus and Speak For The Trees, websites that remain in progress.
             </p>
-            <p class="subline">Our tech stack is Vue.js, Spring MVC (Java) and Postgres</p>
+            <p class="subline">A typical tech stack at C4C is React.js, Vert.x (Java) and Postgres</p>
           </div>
         </div>
       </div>
@@ -72,7 +72,7 @@
       <p class="header">My Skills</p>
       <div class="item">
         <div class="item-container">
-          <p class="header-sub">On the front-end</p>
+          <p class="header-sub">How I can help you</p>
           <div class="skill">
             <p class="name">Vue, React, Angular</p>
             <p class="desc">
@@ -108,15 +108,22 @@
               projects, including Trova and some Code 4 Community projects.
             </p>
           </div>
+          <div class="skill">
+            <p class="name">...and plenty more</p>
+            <p class="desc">
+              This is an overview of my biggest strengths as a developer, but there's many more reasons I could give. If you have further questions, <router-link to="/inquiries">drop me a line.</router-link>
+            </p>
+          </div>
         </div>
       </div>
     </div>
     <div class="more">
-      <p class="header">Still interested?</p>
+      <p class="header">Interested?</p>
       <p class="text">
-        If you have a business-related inquiry, click <router-link to="/inquiries">here</router-link> to get in touch.
-        If you want to know more about my work, click <router-link to="/projects">here</router-link> for more.
-        And if you want the last five minutes of your life back, you're out of luck.
+        If you want the last minute of your life back, you're out of luck. 
+        But if you have a business inquiry or any further questions, then <router-link to="/inquiries">I've made just the form for you.</router-link>
+        <br/><br/>
+        And finally, click <router-link to="/projects">here</router-link> to learn a little more about me and what I've done.
       </p>
     </div>
   </div>
@@ -126,6 +133,7 @@
 
 export default {
   name: 'Home',
+  title: "Home | Bill Wohlers",
   data() {
     return {
       meString: 'Hi, I\'m Bill.',
@@ -134,7 +142,8 @@ export default {
       fullTypingText: "Clocking in at 140 words per minute, I'm in the top 0.1% of typists around the world. The average word has five letters, so I can type about 12 characters per second. That's the speed you're watching now.",
       typingTextIndex: 0,
       typing: false,
-      typed: false
+      typed: false,
+      showReplay: false,
     }
   },
   created() {
@@ -167,6 +176,11 @@ export default {
         this.typingTextIndex = 0;
         this.startTyping();
       }
+    },
+
+    replay() {
+      this.showReplay = false;
+      this.time = 0;
     }
   },
   computed: {
@@ -190,6 +204,14 @@ export default {
       }
       return this.fullTypingText.substring(0, this.typingTextIndex);
     }
+  },
+
+  watch: {
+    text: function(val) {
+      if (val.length === this.meString.length) {
+        setTimeout(() => this.showReplay = true, 500);
+      }
+    }
   }
 }
 </script>
@@ -197,9 +219,14 @@ export default {
 <style scoped lang="scss">
 
 h1 {
-  padding-right: 4px; // makes room for cursor
+  padding-right: 4px;
   display: inline-block;
   border-right: 2px solid #F8F8F8;
+  position: relative;
+
+  &.cursor {
+    border-right: 2px solid #2c3e50;
+  }
 }
 
 .header {
@@ -373,9 +400,19 @@ h1 {
     }
   }
 
+  .replay {
+    width: 0.5em;
+    height: 0.5em;
+    position: absolute;
+    right: -0.5em;
+    top: 0;
+    cursor: pointer;
+  }
+
   .more {
-    background: #F2f2f2;
+    background: #FFF;
     padding: 5em 0;
+    border-bottom: 1px solid #F2F2F2;
 
     .header {
       font-size: 48px;

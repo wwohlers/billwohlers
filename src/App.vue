@@ -203,6 +203,7 @@ a {
   border-bottom: 1px solid #2c3e50;
   text-decoration: none;
   color: #2c3e50;
+  cursor: pointer;
 
   &:hover {
     color: maroon;

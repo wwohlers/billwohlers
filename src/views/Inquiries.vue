@@ -3,8 +3,9 @@
     <h1>Inquiries</h1>
     <div class="banner">
       <p>
-        Use this form for any serious inquiries about me and my work. 
-        In certain cases, I will design, develop, and publish a custom website at little or no cost. If you would like me to consider a project, use this form.
+        Use this form for any inquiries about me and my work and for business opportunities or offers. 
+        <br/><br/>
+        If you've got a cause that I'm passionate about, I may be able to make you a custom website at little or no cost. If you would like me to consider such a project, use this form to let me know.
       </p>
     </div>
     <div class="form">
@@ -30,6 +31,7 @@
 <script>
 export default {
   name: 'Inquiries',
+  title: "Inquiries | Bill Wohlers",
   data() {
     return {
       name: '',
