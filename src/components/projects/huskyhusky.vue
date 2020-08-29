@@ -16,9 +16,7 @@
     </div>
     <div class="main">
       <p>
-        One day late in my first semester at Northeastern, I stumbled upon a small satire publication run by two second-year students at Northeastern. Though their writing impressed me, I 
-        thought their web presence needed an upgrade. In January, I offered to make them a custom website with a content management system that better
-        suited their needs and a design that best represented their character. Over the next three months, I designed the site from the ground up based on their needs, developed and tested
+        One day late in my first semester at Northeastern, I stumbled upon a small satire publication run by two second-year students at Northeastern. Though their writing impressed me, their web presence needed an upgrade. In January, I offered to make them a custom website with a powerful content management and a custom design that better represented their character. Over the next three months, I designed the site from the ground up based on their vision, developed and tested
         it, and published it on AWS, replacing their old website. 
         <br/><br/>
         The frontend was done entirely in Vue. The backend was powered by Express.js and used MongoDB, making the Husky Husky my first project that used a document-based database. But the

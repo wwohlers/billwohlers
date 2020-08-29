@@ -4,11 +4,22 @@
       <C4C v-if="name === 'c4c'"></C4C>
       <HuskyHusky v-if="name === 'huskyhusky'"></HuskyHusky>
       <Trova v-if="name === 'trova'"></Trova>
+      <FloorExchange v-if="name === 'floor-exchange'"></FloorExchange>
     </div>
     <div v-else>
       <div class="wrapper">
         <h1>My Projects</h1>
         <div class="project-list">
+          <div class="project-list-item" @click="go('huskyhusky')">
+            <img src="../assets/huskyhusky_logo.png">
+            <p class="desc">Personal Project &middot; Student-run org</p>
+            <p class="time">Jan 2019 &mdash; Apr 2019</p>
+          </div>
+          <div class="project-list-item" @click="go('floor-exchange')">
+            <img src="../assets/f.e_banner.png">
+            <p class="desc">Personal Project &middot; Startup</p>
+            <p class="time">June 2020 &mdash; </p>
+          </div>
           <div class="project-list-item" @click="go('trova')">
             <img src="../assets/trova_logo.png">
             <p class="desc">Intern &middot; Startup</p>
@@ -18,11 +29,6 @@
             <img src="../assets/c4c_logo.png">
             <p class="desc">Developer &middot; Student-run org</p>
             <p class="time">Sept 2019 &mdash; </p>
-          </div>
-          <div class="project-list-item" @click="go('huskyhusky')">
-            <img src="../assets/huskyhusky_logo.png">
-            <p class="desc">Personal Project &middot; Student-run org</p>
-            <p class="time">Jan 2019 &mdash; Apr 2019</p>
           </div>
         </div>
       </div>
@@ -34,6 +40,7 @@
 import C4C from '../components/projects/c4c';
 import HuskyHusky from '../components/projects/huskyhusky';
 import Trova from '../components/projects/trova';
+import FloorExchange from '../components/projects/floor-exchange';
 
 export default {
   name: 'Projects',
@@ -45,6 +52,7 @@ export default {
     C4C,
     HuskyHusky,
     Trova,
+    FloorExchange
   },
   methods: {
     go(name) {

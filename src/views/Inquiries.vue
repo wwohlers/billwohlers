@@ -3,9 +3,9 @@
     <h1>Inquiries</h1>
     <div class="banner">
       <p>
-        Use this form for any inquiries about me and my work and for business opportunities or offers. 
+        Please email me for any questions about me and my work or for business inquiries or opportunities. 
         <br/><br/>
-        If you've got a cause that I'm passionate about, I may be able to make you a custom website at little or no cost. If you would like me to consider such a project, use this form to let me know.
+        If you've got a cause that I'm passionate about, I may be able to make you a custom website at little or no cost. If you would like me to consider such a project, send me an email with some basic information about your organization.
         <br/><br/>
         Please reach me at <u>wohlers.w@northeastern.edu</u>.
       </p>

@@ -29,7 +29,10 @@
               In spring 2020, I built <a href="https://thehuskyhusky.com">their new site</a>, which takes care of content management in a way 
               that makes sense for them while showcasing a simple but expressive design.
             </p>
-            <p class="subline">Built with Vue.js, Express.js, and MongoDB on AWS</p>
+            <p class="subline">
+              Built with Vue.js, Express.js, and MongoDB on AWS
+            </p>
+            <button class="read-more" @click="$router.push('/projects/huskyhusky')">Read More <span class="bounce">>></span></button>
         </div>
         </div>
       </div>
@@ -42,10 +45,10 @@
             <p class="header-sub">floor.exchange</p>
             <p class="tagline">Personal project and startup</p>
             <p class="body">
-              During quarantine, in search of an idea for a new personal project, I envisioned a social network based around stocks and the stock market. Enter floor.exchange, my 
-              solo startup project that allows users to trade stocks with virtual currency and discuss companies and stock market news in a Reddit-like forum. Coming soon &mdash; along with a native app.
+              During quarantine, in search of an idea for a personal project, I envisioned a social network based around stocks and the stock market. Enter <a href="https://floor.exchange" target="_blank">floor.exchange</a>, a solo startup web application where users can trade stocks using virtual currency and discuss stock market news in a reddit-style forum.
             </p>
             <p class="subline">Built with Vue, Express.js, and Postgres on AWS</p>
+            <button class="read-more" @click="$router.push('/projects/floor-exchange')">Read More <span class="bounce">>></span></button>
           </div>
         </div>
       </div>
@@ -56,13 +59,14 @@
           </div>
           <div class="big">
             <p class="header-sub">Trova</p>
-            <p class="tagline">Contributed (full-stack) during an internship in summer 2020</p>
+            <p class="tagline">Internship as a full-stack engineer</p>
             <p class="body">
               <a href="https://trovaus.com">Trova</a> is a social network that helps property managers improve tenant satisfaction by fostering a 
               strong sense of community and belonging. Because the team had only a few engineers, I made large contributions to a complete redesign
               of the front end, and significantly expanded back-end functionality.
             </p>
             <p class="subline">Built with Angular, Express.js, and Postgres on Heroku</p>
+            <button class="read-more" @click="$router.push('/projects/trova')">Read More <span class="bounce">>></span></button>
           </div>
         </div>
       </div>
@@ -73,13 +77,14 @@
           </div>
           <div class="big">
             <p class="header-sub">Code 4 Community</p>
-            <p class="tagline">Contribute to front-end work throughout the school year</p>
+            <p class="tagline">Volunteer full-stack developer</p>
             <p class="body">
               <a href="https://c4cneu.com">Code 4 Community</a> is a student-run org at Northeastern University that
-              builds websites for free for nonprofit organizations in the Boston area. So far, I've helped complete their <a href="https://c4cneu.com">internal
-              website</a>, and have helped with front-end work for Lucy's Love Bus and Speak For The Trees, websites that remain in progress.
+              builds websites for free for nonprofit organizations in the Boston area. In fall 2019, I led the front-end development of their <a href="https://c4cneu.com">internal
+              website</a>, and I've since contributed full-stack to other web projects for various nonprofits in the area.
             </p>
             <p class="subline">A typical tech stack at C4C is React.js, Vert.x (Java) and Postgres</p>
+            <button class="read-more" @click="$router.push('/projects/c4c')">Read More <span class="bounce">>></span></button>
           </div>
         </div>
       </div>
@@ -126,16 +131,16 @@
           <div class="skill">
             <p class="name">...and plenty more</p>
             <p class="desc">
-              These are only my biggest strengths as a developer. If you have further questions, <router-link to="/inquiries">drop me a line.</router-link>
+              Those are my biggest strengths as a developer. If you have further questions, <router-link to="/inquiries">drop me a line.</router-link>
             </p>
           </div>
         </div>
       </div>
     </div>
     <div class="more">
-      <p class="header">Interested?</p>
+      <p class="header">More questions?</p>
       <p class="text">
-        If you have a business inquiry or any further questions, <router-link to="/inquiries">this</router-link> is the page for you. To learn a little more about me and what I've done, click <router-link to="/projects">here</router-link>. And if you want the last minute of your life back, you're out of luck.
+        If you have a business inquiry or any further questions, <router-link to="/inquiries">click here</router-link> for my contact information. To learn more about me and my projects, click <router-link to="/projects">here</router-link>. And if you want the last minute of your life back, you're out of luck.
       </p>
     </div>
   </div>
@@ -362,6 +367,29 @@ h1 {
           .body {
             font-size: 16px;
             line-height: 1.5em;
+          }
+
+          .read-more {
+            background: maroon;
+            color: white;
+            text-transform: uppercase;
+            font-size: 15px;
+            padding: 6px 1em;
+            border: none;
+            box-shadow: 0 0 10px #CCC;
+
+            .bounce {
+              display: inline-block;
+              transition: 0.5s;
+            }
+
+            &:hover {
+              box-shadow: 0 0 10px 4px #CCC;
+
+              .bounce {
+                margin-left: 0.5em;
+              }
+            }
           }
 
           .subline {
