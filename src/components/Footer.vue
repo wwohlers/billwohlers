@@ -7,7 +7,7 @@
       <router-link to="/inquiries">Inquiries</router-link>
       <br />
       <p class="copyright">
-        &copy; {{ year }} Bill Wohlers
+        &copy; {{ year }} Bill Wohlers &middot; Built with Vue
       </p>
     </div>
   </div>

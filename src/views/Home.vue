@@ -43,9 +43,9 @@
           </div>
           <div class="big">
             <p class="header-sub">floor.exchange</p>
-            <p class="tagline">Personal project and startup</p>
+            <p class="tagline">Personal project</p>
             <p class="body">
-              During quarantine, in search of an idea for a personal project, I envisioned a social network based around stocks and the stock market. Enter <a href="https://floor.exchange" target="_blank">floor.exchange</a>, a solo startup web application where users can trade stocks using virtual currency and discuss stock market news in a reddit-style forum.
+              During quarantine, in search of an idea for a personal project, I envisioned a social network based around stocks and the stock market. Enter <a href="https://floor.exchange" target="_blank">floor.exchange</a>, a web platform where users can trade stocks using virtual currency and discuss stock market news in a reddit-style forum.
             </p>
             <p class="subline">Built with Vue, Express.js, and Postgres on AWS</p>
             <button class="read-more" @click="$router.push('/projects/floor-exchange')">Read More <span class="bounce">>></span></button>
@@ -65,7 +65,10 @@
               strong sense of community and belonging. Because the team had only a few engineers, I made large contributions to a complete redesign
               of the front end, and significantly expanded back-end functionality.
             </p>
-            <p class="subline">Built with Angular, Express.js, and Postgres on Heroku</p>
+            <p class="quote">
+              <span class="quote-content">"Bill joined Trova as a full-stack engineer and immediately exceeded our expectations. I was extremely impressed by his business acumen, constructive feedback, and his ability to deliver high-quality code... You can’t teach hustle or passion and Bill has both."</span>
+              <span class="quote-attr">&mdash; Mike Fodera, CEO of Trova</span>
+            </p>
             <button class="read-more" @click="$router.push('/projects/trova')">Read More <span class="bounce">>></span></button>
           </div>
         </div>
@@ -367,6 +370,20 @@ h1 {
           .body {
             font-size: 16px;
             line-height: 1.5em;
+          }
+
+          .quote {
+            font-size: 15px;
+            font-style: italic;
+            line-height: 1.5em;
+            color: #666;
+            margin: 1.5em 0 2.5em 0;
+
+            .quote-attr {
+              display: block;
+              margin-top: 1em;
+              float: right;
+            }
           }
 
           .read-more {

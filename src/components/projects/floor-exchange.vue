@@ -1,26 +1,23 @@
 <template>
   <div class="project">
     <parallax class="parallax" :speed-factor="1">
-      <img class="dim" src="../../assets/trova_banner.png"/>
+      <img class="dim" src="../../assets/f.e_banner.png"/>
     </parallax>
     <div class="sub-title-wrapper">
       <div class="sub-title">
         <div class="img">
-          <img src="../../assets/trova_logo.png" />
+          <img src="../../assets/f.e_logo.svg" />
         </div>
         <p class="text">
-          <a href="https://www.trovaus.com" target="_blank">Trova</a> is a social networking startup based in Boston, MA. They develop an innovative web platform that matches and connects users with similar interests and backgrounds.
+            <a href="https://floor.exchange" target="_blank">floor.exchange</a> is a social network where investors and traders can trade stocks using virtual currency, keep up with stock market news, and discuss market movements in a reddit-style forum.
         </p>
       </div>
     </div>
     <div class="main">
       <p>
-        I joined Trova in an internship that began in April 2020 and ended when school resumed in the fall. At the time, and still, Trova was a small social networking startup, founded by a guy with an ambitious vision, based in Boston. Their tech stack is ordinary: Angular on the front-end, Express.js and 
-        Postgres in the back. Angular was unfamiliar to me, and &mdash; coming from Vue &mdash; presented an unexpectedly steep learning curve.
-        The back-end was familiar, as I had worked with both Express and Postgres before.
+        During the summer of 2020, I finally began work on a personal project that had brewed in my mind for months. I envisioned a web platform at the intersection of social networks and trading tools, exposing a new, fundamentally <i>social</i> aspect of the stock market. Initial development took about two months, and testing and publication an additional month after that. By September, the website was live, which presented a new challenge that I had yet to face in any of my previous projects: business marketing.
         <br/><br/>
-        When I joined the team, Trova's web app was in the process of a redesign. My first weeks were spent mostly on CSS and other front-end development, 
-        including lots of intimate work with Angular. I helped design and implement a new events calendar system on their website, and finally completely refactored their profile model and matching algorithms. This project also gave me a valuable first taste of relational ORMs in Node. 
+        This continues to be an ongoing project and business venture, and one that fully showcases what I'm capable of as a web developer.
       </p>
     </div>
   </div>

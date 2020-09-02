@@ -106,15 +106,28 @@ export default {
 
   .main {
     margin: 4em 0;
+    width: 50%;
+    margin: auto;
 
     p {
-      width: 50%;
-      margin: auto;
       text-align: left;
       font-size: 18px;
       line-height: 1.5em;
     }
   }
+}
+
+.blockquote {
+  padding-left: 2em;
+  border-left: 2px solid gray;
+  margin: 2em 0 1em 0;
+  text-align: left;
+  line-height: 1.5em;
+}
+
+.attr {
+  width: 100%;
+  text-align: right;
 }
 
 .project-list {
@@ -180,10 +193,8 @@ export default {
     }
 
     .main {
-      p {
-        width: 80%;
-        font-size: 16px;
-      }
+      width: 80%;
+      font-size: 16px;
     }
   }
 }
