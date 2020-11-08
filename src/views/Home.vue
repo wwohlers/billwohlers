@@ -15,7 +15,7 @@
       </div>
     </div>
     <div class="portfolio">
-      <p class="header">My Work</p>
+      <p class="header">What I've Built</p>
       <div class="item">
         <div class="item-container">
           <div class="small">
@@ -49,6 +49,27 @@
             </p>
             <p class="subline">Built with Vue, Express.js, and Postgres on AWS</p>
             <button class="read-more" @click="$router.push('/projects/floor-exchange')">Read More <span class="bounce">>></span></button>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item-container">
+          <div class="small">
+            <img src="../assets/typeaway_banner.png">
+          </div>
+          <div class="big">
+            <p class="header-sub">Typeaway.io</p>
+            <p class="tagline">Personal project</p>
+            <p class="body">
+              I love typing, and I especially love one-minute typing tests, like 10FastFingers.
+              Unhappy with existing sites, I set out to build my own simple front-end app that
+              did typing tests right (in my humble opinion). <a href="https://typeaway.io"
+                                                                target="_blank">Try it
+              out for yourself!</a> My record is 150 WPM.
+            </p>
+            <p class="subline">Built with Vue and hosted on AWS S3</p>
+            <button class="read-more" @click="$router.push('/projects/typeaway')">Read More <span
+                class="bounce">>></span></button>
           </div>
         </div>
       </div>
@@ -93,42 +114,43 @@
       </div>
     </div>
     <div class="skills">
-      <p class="header">My Skills</p>
+      <p class="header">How I Built Them</p>
       <div class="item">
         <div class="item-container">
           <div class="skill">
             <p class="name">Vue, React, Angular</p>
             <p class="desc">
-              My go-to frontend framework. I believe that Vue has the answer to almost any front-end problem. I swear by
-              Vue and use it in all of my solo projects, like this one.
+              I've got extensive experience in all three, but Vue is my go-to frontend framework.
+              I believe that Vue has the answer to almost any front-end problem. I swear by Vue
+              and use it in all of my solo projects, like this one.
             </p>
           </div>
           <div class="skill">
-            <p class="name">Express.js RESTful API</p>
+            <p class="name">Node.js</p>
             <p class="desc">
-              My go-to back-end framework, and suitable for nearly any modern web app. I learned it by using it in several of my personal projects.
-              I also gained significant experience while working on Trova's backend.
+              Node.js is my go-to for building web applications. I swear by Typescript and npm,
+              which have both helped me build complex, maintainable, and scalable RESTful APIs
+              using Express.js and Nest.js, among others. I love the power and versatility that
+              Javascript offers when it's done right.
             </p>
           </div>
           <div class="skill">
-            <p class="name">PHP</p>
+            <p class="name">Databases</p>
             <p class="desc">
-              Though hard to come by nowadays, PHP is a classic. Appropriately, it was the first back-end language that I picked up.
-              My first full-stack projects that I made in high school were built with PHP. 
+              Picking a database is like picking a programming language &mdash; it all depends on
+              the context and use case. For highly complex data structures, I tend to go with
+              MongoDB because of close integration with Javascript. In other cases, I'll use an SQL
+              database like Postgres.
             </p>
           </div>
           <div class="skill">
-            <p class="name">Databases/SQL</p>
+            <p class="name">AWS</p>
             <p class="desc">
-              I believe in flexible and sensible data structures. MongoDB is my go-to database management system, but any document-based database makes
-              sense for most projects and is far easier to reason about. All my personal projects use one.
-            </p>
-          </div>
-          <div class="skill">
-            <p class="name">Cloud Computing</p>
-            <p class="desc">
-              Classics, like PHP. Postgres is my go-to relational database management system, and I've worked with it in various different
-              projects, including Trova and some Code 4 Community projects.
+              Designing and programming an app are just one part of the process. To make the app
+              available, you also have to configure and deploy the infrastructure that powers it.
+              My projects have used S3, Cloudfront, Route 53, Lambda, EC2, ALB, and RDS. Along
+              the way, I've learned a lot about the fundamentals of computers and networking, and
+              gained a proficiency with Linux systems.
             </p>
           </div>
           <div class="skill">

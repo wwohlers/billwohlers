@@ -5,6 +5,7 @@
       <HuskyHusky v-if="name === 'huskyhusky'"></HuskyHusky>
       <Trova v-if="name === 'trova'"></Trova>
       <FloorExchange v-if="name === 'floor-exchange'"></FloorExchange>
+      <Typeaway v-if="name === 'typeaway'"/>
     </div>
     <div v-else>
       <div class="wrapper">
@@ -17,8 +18,13 @@
           </div>
           <div class="project-list-item" @click="go('floor-exchange')">
             <img src="../assets/f.e_banner.png">
-            <p class="desc">Personal Project &middot; Startup</p>
+            <p class="desc">Personal Project</p>
             <p class="time">June 2020 &mdash; </p>
+          </div>
+          <div class="project-list-item" @click="go('typeaway')">
+            <img src="../assets/typeaway_banner.png">
+            <p class="desc">Typeaway.io</p>
+            <p class="time">November 2020</p>
           </div>
           <div class="project-list-item" @click="go('trova')">
             <img src="../assets/trova_logo.png">
@@ -41,6 +47,7 @@ import C4C from '../components/projects/c4c';
 import HuskyHusky from '../components/projects/huskyhusky';
 import Trova from '../components/projects/trova';
 import FloorExchange from '../components/projects/floor-exchange';
+import Typeaway from "@/components/projects/typeaway";
 
 export default {
   name: 'Projects',
@@ -49,6 +56,7 @@ export default {
     name: String,
   },
   components: {
+    Typeaway,
     C4C,
     HuskyHusky,
     Trova,
